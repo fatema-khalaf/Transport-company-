@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FFF04BD-A28A-4DD3-B9E2-346F71BA292A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>final2</RootNamespace>
+    <AssemblyName>final2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addblucard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addblucard.Designer.cs">
+      <DependentUpon>Addblucard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddElectronicCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddElectronicCard.Designer.cs">
+      <DependentUpon>AddElectronicCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddIstanbulCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIstanbulCard.Designer.cs">
+      <DependentUpon>AddIstanbulCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busBlue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busBlue.Designer.cs">
+      <DependentUpon>busBlue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busIstanbul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busIstanbul.Designer.cs">
+      <DependentUpon>busIstanbul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busTrans.Designer.cs">
+      <DependentUpon>busTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatCard.Designer.cs">
+      <DependentUpon>CreatCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="done.Designer.cs">
+      <DependentUpon>done.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metroBlue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metroBlue.Designer.cs">
+      <DependentUpon>metroBlue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metroeleketronec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metroeleketronec.Designer.cs">
+      <DependentUpon>metroeleketronec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metroIstanbul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metroIstanbul.Designer.cs">
+      <DependentUpon>metroIstanbul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="wellcom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wellcom.Designer.cs">
+      <DependentUpon>wellcom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Addblucard.resx">
+      <DependentUpon>Addblucard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddElectronicCard.resx">
+      <DependentUpon>AddElectronicCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddIstanbulCard.resx">
+      <DependentUpon>AddIstanbulCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busBlue.resx">
+      <DependentUpon>busBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busIstanbul.resx">
+      <DependentUpon>busIstanbul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busTrans.resx">
+      <DependentUpon>busTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatCard.resx">
+      <DependentUpon>CreatCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="done.resx">
+      <DependentUpon>done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metroBlue.resx">
+      <DependentUpon>metroBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metroeleketronec.resx">
+      <DependentUpon>metroeleketronec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metroIstanbul.resx">
+      <DependentUpon>metroIstanbul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wellcom.resx">
+      <DependentUpon>wellcom.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
