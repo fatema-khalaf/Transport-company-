@@ -13,13 +13,6 @@ Moreover, There are three type of customers:
 "Blue card" has customer id, customer name, customer type and points. 
 "Electronic card" has points depending on the price of card. 
 There are two type of vehicles: bus and metro bus. 
-
-
-
-
-
-
-
 Transportation using bus
  the fare is determined depending on the subscription’s type and the Transport number as the following:
 Transport number	Istanbul card
